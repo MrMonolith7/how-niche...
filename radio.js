@@ -61,7 +61,7 @@ const songs = [
         artist: "Hiatus Kaiyote",
         album: "Love Heart Cheat Code",
         year: "2024",
-        file: "music/Everything's Beautiful.mp3",
+        file: "music/Everything’s Beautiful.mp3",
         cover: "music/covers/love-heart-cheat-code.jpg"
     },
     {
