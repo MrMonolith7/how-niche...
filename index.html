@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niche Radio | Independent Sound</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>NICHE RADIO</h1>
+            <p>Independent Sound. Uncommon Taste.</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#listen">Listen</a>
+            <a href="#hall">The Symposium</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="eyebrow">LIVE FROM THE CANADIAN FRONTIER OF SUPERSONIC SOUND</p>
+            <h2>LIVE NICHE.</h2>
+            <p>This universe is too vast to take the road most travelled. Live from the heartland: a curation five seasons in the making.</p>
+
+            <a href="#listen" class="button">LISTEN NOW</a>
+        </section>
+
+        <section id="listen" class="live-section">
+            <div class="section-heading">
+                <span class="live-indicator"></span>
+                <h2>BROADCAST IS TOTALLY REALLY LIVE</h2>
+            </div>
+
+            <div class="radio-player">
+            <div class="live-card">
+                <!-- <canvas id="waveform"></canvas> -->
+
+                <div class="album-art">
+                    <img id="album-cover" src="music/covers/default.png" alt="Current album artwork">
+                </div>
+
+                <div class="live-info">
+                    <p class="eyebrow">NOW PLAYING:</p>
+                    <h3 id="song-title">Transmission offline.</h3>
+                    <p id="song-artist">If you're seeing this...</p>
+                    <p id="song-album">Can I please have, like- $20?</p>
+
+                    <div class="player-controls">
+                        <button id="previous-button" aria-label="Previous song">&#9198;</button>
+                        <button id="play-button" aria-label="Play">&#9654;</button>
+                        <button id="skip-button" aria-label="Next song">&#9197;</button>
+                    </div>
+                </div>
+
+                <!-- visualiser thing (TBD) -->
+
+                <!-- THE BIG RADIO -->
+                <audio id="radio-audio" preload="auto"></audio>
+
+            </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>WHAT IS NICHE RADIO?</h2>
+            <p>Niche Radio is an independent broadcasting platform dedicated to music, creativity, and alternative culture. Built from a mind who thought there was more to the SOLspace than the norm, this project has expanded to reach the waves and directly into your sound systems. Enjoy the ride; we control transmission now.</p>
+            <ul>
+                <li><b>Our Most Merciful God-King of Nichetaria: </b>Motis</li>
+                <li><b>Webmaster: </b>MrMonolith</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <h2>NICHE RADIO</h2>
+        <p>Independent Sound. Uncommon Taste.</p>
+        <p>2026, John SOL Productions. All rights reserved.</p>
+        <p>Doin' your mom.</p>
+    </footer>
+<script src="radio.js"></script>
+</body>
+</html>
