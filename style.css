@@ -99,6 +99,11 @@ nav a:hover {
     transition: background-color 0.3s, transform 0.3s;
 }
 
+#loop-button {
+    opacity: 0.5;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
 .button:hover {
     background-color: var(--off-white);
     transform: translateY(-3px);
@@ -230,10 +235,38 @@ section:not(.hero) {
     background-color: var(--pastel-pink);
 }
 
+#loop-button.active, #loop-button.active:hover {
+    background-color: var(--pastel-pink);
+    color: var(--dark-green);
+    opacity: 1;
+}
+
 audio {
     width: 100%;
     max-width: 350px;
     margin-top: 12px;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-basis: 100%;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.progress-container span {
+    color: var(--gray);
+    font-size: 0.8rem;
+    min-width: 35px;
+}
+
+#progress-bar {
+    flex: 1;
+    height: 5px;
+    accent-color: var(--pastel-pink);
+    cursor: pointer;
 }
 
 /*about*/
