@@ -53,8 +53,10 @@
 
                     <div class="player-controls">
                         <button id="previous-button" aria-label="Previous song">&#9198;</button>
+                        <button id="restart-button" aria-label="Restart track">&#9668;</button>
                         <button id="play-button" aria-label="Play">&#9654;</button>
                         <button id="skip-button" aria-label="Next song">&#9197;</button>
+                        <button id="loop-button" aria-label="Enable loop">&#8635;</button>
                     </div>
                 </div>
 
@@ -64,6 +66,17 @@
                 <audio id="radio-audio" preload="auto"></audio>
 
             </div>
+            <div class="progress-container">
+                    <span id="current-time">0:00</span>
+                    <input
+                    type="range"
+                    id="progress-bar"
+                    value="0"
+                    min="0"
+                    max="100"
+                    aria-label="Track progress">
+                    <span id="duration">0:00</span>
+                </div>
             </div>
         </section>
 
@@ -83,6 +96,6 @@
         <p>2026, John SOL Productions. All rights reserved.</p>
         <p>Doin' your mom.</p>
     </footer>
-<script src="radio.js"></script>
+<script src="radio.js" defer></script>
 </body>
 </html>
